@@ -1,0 +1,13 @@
+{
+  "environment": "production",
+  "port": "8080",
+  "cookie": {
+    "secure": true,
+    "sameSite": "none",
+    "client": "https://png-community.ir",
+    "sessionSecret": "555548adecretCsrasdQ!f6645648w#%d6a"
+  },
+  "db": {
+    "address": "mongodb://127.0.0.1:27017/Api_Tempelet"
+  }
+}
