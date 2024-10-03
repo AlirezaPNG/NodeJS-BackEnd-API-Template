@@ -6,7 +6,7 @@ const config = require('config');
 module.exports = new (class extends controller {
     //dashboard
     async Dashboard(req, res) {
-        let user = await Admin.findById(req.user._id)
+        let user = await User.findById(req.user._id)
         this.response({ res, data: user, message: "ok" })
     }
 

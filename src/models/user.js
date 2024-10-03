@@ -8,7 +8,6 @@ const userSchema = new mongoose.Schema({
     profile: { type: String, default: "/img/profile/user.png" },
     status: {
         verify_email: { type: Boolean, default: false },
-        verify_phone: { type: Boolean, default: false },
         active: { type: Boolean, default: true },
     },
     adminId: { type: mongoose.Schema.Types.ObjectId, ref: "Admin" },

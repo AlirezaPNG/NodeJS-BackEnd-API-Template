@@ -18,6 +18,7 @@
 ### Dependency
 
 - Node JS
+- mongo DB
 
 ### inatall 
 
