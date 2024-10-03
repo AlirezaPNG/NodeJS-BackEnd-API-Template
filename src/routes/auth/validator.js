@@ -14,24 +14,16 @@ module.exports = new class {
                 } else {
                     return false;
                 }
-            }).withMessage('فرمت ایمیل مجاز نمی باشد فرمت ایمیل باید @gmail.com باشد'),
+            }).withMessage('Email format is not allowed to be @gmail.com'),
             Check('password').custom(text => {
-                const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+                const regex = /^[A-Za-z\d]{8,}$/
                 if (regex.test(text)) {
                     return true;
                 } else {
                     return false;
                 }
-            }).withMessage("رمز عبور بایدحداقل 8 رقم ، شامل کارکترهای انگلیسی کوچک و بزرگ ، اعداد و کارکتر خاص باشد باشد"),
-            Check('name').notEmpty().isLength({ min: 5 }).withMessage("نام نمیتواند کوتاه"),
-
-            Check('phone').custom(text => {
-                if (text.length == 11) {
-                    return true
-                } else {
-                    return false
-                }
-            }).withMessage("شماره تلفن باید  11 رقمی باشد")
+            }).withMessage("Password must be 8 digits and you should be English and numbers"),
+            Check('name').notEmpty().isLength({ min: 5 }).withMessage("Name can't be short"),
 
         ]
     }
@@ -48,7 +40,7 @@ module.exports = new class {
                 } else {
                     return false;
                 }
-            }).withMessage('فرمت ایمیل مجاز نمی باشد فرمت ایمیل باید @gmail.com باشد'),
+            }).withMessage('Email format is not allowed to be @gmail.com'),
 
             Check('password').notEmpty().withMessage("password is empty")
         ]

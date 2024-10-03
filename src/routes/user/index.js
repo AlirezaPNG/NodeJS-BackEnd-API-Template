@@ -5,7 +5,7 @@ const validator = require('./validator');
 const isAdminAccess = require('../../middlewares/admin');
 const config = require('config');
 
-router.get('/get-data', isAdminAccess(["ّFounder", "PNG-Team", "test"]), controller.Dashboard);
+router.get('/dashboard', controller.Dashboard);
 
 
 

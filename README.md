@@ -9,6 +9,7 @@
 - Auth Cheking
 - Admin Check with Role Or Rank
 - Route Class Base (Fast Develop)
+- user Router
 
 
 
@@ -36,3 +37,9 @@ npm start
 ```
 
 
+
+### Larger development
+
+- 1 just Copy one of the folders in the routes folder and with the desired name
+- 2 nice 🔥 You have a new router right now
+- 3 develop Now

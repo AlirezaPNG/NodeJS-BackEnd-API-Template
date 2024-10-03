@@ -5,7 +5,7 @@
     "secure": true,
     "sameSite": "none",
     "client": "https://png-community.ir",
-    "sessionSecret": "555548adecretCsrasdQ!f6645648w#%d6a"
+    "sessionSecret": "ATRYQNC44552#455q2123445zaz@"
   },
   "db": {
     "address": "mongodb://127.0.0.1:27017/Api_Tempelet"
